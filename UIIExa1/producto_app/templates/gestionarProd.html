@@ -1,0 +1,10 @@
+{% extends "bs.html" %}
+
+{% block title %} Gestion de materias {% endblock %}
+
+{% block bdy %}
+    <h1>Gestion de productos : : Roberto Pérez : : Eliseo Nava</h1>
+    {% for m in productos %}
+        <ol>ID: {{m.id_producto}}| Nombre: {{m.nom_producto}} | Tipo:{{m.tipo_prod}} | Cantidad: {{m.cant_prod}} | Pago: {{m.metodo_pag}} | Proveedor: {{m.proveedor_prod}} | ID proveedor:{{m.id_proveedor}}</ol>
+    {% endfor %}
+{% endblock %}
